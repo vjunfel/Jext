@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Jext",
-  description: "Tweeter clone website using NextJS",
+  description: "Twitter clone website using NextJS",
 };
 
 export default function RootLayout({ children }) {
