@@ -15,9 +15,9 @@ const handler = NextAuth({
     async session({ session, token }) {
       session.user.email = session.user.email
       session.user.username = session.user.name
+      .toLowerCase()
         .split(' ')
         // .join('')
-        // .toLowerCase()
       session.user.uid = token.sub
       
       return session
