@@ -32,7 +32,7 @@ export default function Input() {
   }, [selectedFile])
 
   const uploadImageToStorage = () => {
-    uploadImageToStorage(true)
+    setImageFileUploading(true)
     const storage = getStorage(app)
     const fileName = new Date().getTime() + '-' + selectedFile.name // Add date and time to make every filename unique.
     const storageRef = ref(storage, fileName)
