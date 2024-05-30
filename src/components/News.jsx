@@ -13,10 +13,10 @@ export default function News() {
       .then(data => {
         setNews(data.articles)
 
-        console.log(data)
+        // console.log(data)
         // console.log(data.totalResults)
         // console.log(data.status)
-        console.log(data.articles)
+        // console.log(data.articles)
         // console.log(data.articles[0])
       })
   }, [])
